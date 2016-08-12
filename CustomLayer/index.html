@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html ng-app="customlayer" ng-controller="index">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="height=device-height,width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no">
+		<link rel="shortcut icon" href="">
+		<script type="text/javascript" src="js/angular.min.js" ></script>
+		<script type="text/javascript" src="js/jquery-3.0.0.min.js" ></script>
+		<script type="text/javascript" src="js/layer.js" ></script>
+		<title></title>
+	</head>
+	<body>
+		<div id="red" style="background-color: white; border-radius: 10px; text-align: center; display: none;">
+			<div style="padding: 3%;">
+				<div><img src="img/redicon.jpg" align="absmiddle" width="60px" height="60px" /></div>
+				<div style="font-size: 14px; padding-top: 15px;"><b>恭喜获得10个红包</b></div>
+				<div style="font-size: 13px; padding-top: 5px;">分享给小伙伴，大家一起抢。</div>
+			</div>
+			<div style="height: 1px; background-color: #d5d5d5; margin-top: 10px;"></div>
+			<div style="width: 100%; text-align: center;">
+				<div style="float: left; width: 49.75%; height: 41px; padding-top: 10px;" ng-click="cancel()">取消</div>
+				<div style="float: left; width: 1px; height: 51px; background-color: #d5d5d5;"></div>
+				<div style="float: right; width: 49.75%; height: 41px; padding-top: 10px;" ng-click="sendRedpacket()">发红包</div>
+				<div style="clear: both;"></div>
+			</div>
+		</div>
+	
+		<img src="img/wxpay.png" width="103px" height="30px" style="z-index: 2;margin-top: 20px; margin-left: 10px;" ng-click="sendRed()"/>
+		
+	</body>
+	<script type="text/javascript" src="index.js" ></script>
+</html>
