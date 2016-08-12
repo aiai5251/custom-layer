@@ -66,3 +66,4 @@ var redIndex = 0;
 
 完整的h5代码在github上：
 
+https://github.com/aiai5251/custom-layer
